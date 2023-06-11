@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=0">
+<style>
+body{
+		width:100%;
+	   
+		}
+		td,tr{
+		border:1px solid black;
+		}
+            html{scroll-behavior: smooth;}
+            *{
+                margin:0;
+                padding:0;
+            }
+            nav{
+                display:flex;
+                justify-content: space-between;
+                background-color: rgb(227,226,222);
+                color:black;
+            }
+            nav ul{
+                width:25%;
+                margin-right: 50px;
+                display:flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style: none;
+            }
+            nav ul li{
+                cursor:pointer;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color:black;
+                padding:5px;
+            }
+            nav ul li a:hover{
+                border-bottom: solid red;
+				border-top:solid red;
+            
+            }
+            nav img{
+              height:50px;
+              margin-left: 10px;
+            }
+            .sub-container{
+                border:1px solid black;
+                width:100%;
+                height:500vh;
+            }
+            #searchbar{
+                align: center;
+            }
+            #home{
+                
+            }
+			#img:hover{
+			width:80%;
+			
+			}
+			#btn1{
+			background-color:green;
+			border-color:red;
+			width:50%;
+			color:white;
+
+			}
+			#btn1:hover{
+			background-color:blue;
+			border-color:green;
+		    cursor:pointer;
+			}
+			#btn2{
+			background-color:green;
+			border-color:red;
+			width:30%;
+			color:white;
+			margin-left:30px;
+			}
+           #btn2:hover{
+			background-color:blue;
+			border-color:green;
+		   cursor:pointer;
+			}
+			#btn3{
+			background-color:green;
+			border-color:red;
+			width:25%;
+			color:white;
+			margin-left:30px;
+			}
+           #btn3:hover{
+			background-color:blue;
+			border-color:green;
+						cursor:pointer;
+			}
+			#btn4{
+			background-color:green;
+			border-color:red;
+			width:25%;
+			color:white;
+			margin-left:40px;
+			}
+           #btn4:hover{
+			background-color:blue;
+			border-color:green;
+						cursor:pointer;
+			}
+			#btn5{
+			background-color:green;
+			border-color:red;
+			width:25%;
+			color:white;
+			margin-left:70px;
+			}
+           #btn5:hover{
+			background-color:blue;
+			border-color:green;
+						cursor:pointer;
+			}
+			/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color:bottom-border:solid red;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+ 
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: gray;color:white;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+		  #whatsapp{
+		  margin-left:10%;
+		  }
+
+		  </style>
+        
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+			
+        </style>
+    </head>
+    <body>
+        <nav>
+            <img src="download (1).png" alt="Amazon">
+            
+            <input type="search"  placeholder="Search Amazon.in" style="width:  50%;border:5px solid yellow;">
+          
+               
+            <ul>
+                <li><a href="home.html">Home</a></li>
+              <li>  <a onclick="myFunction()" class="dropbtn">Menu</a>
+  <div id="myDropdown" class="dropdown-content">
+	<a href="navigation.html">Electronics</a>
+    <a href="shirts.html" target="_blank">Mens Shirts</a>
+    <a href="shoes.html" >Mens Shoes</a>
+	 <a href="Travels.html" >Travells & School Bag</a>
+	  <a href="category.html">Choose Category</a>
+	
+  </div> </li>
+               <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeago3fZ7iXsw7vEkkj97am-SQIg7n7U4_oQleX_xzGWgloVw/viewform?usp=sf_link">Contact</a></li> 
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+		 <div class="container">
+            <div class="home sub-container" id="home" style="font-size:25px;text-align:center;"><br><h3>Mens Shoes</h3>
+
+		<table>
+			<tr>
+			<td>
+			<a href="https://www.amazon.in/ASIAN-Future-01-Sneakers-Lightweight-Numeric_9/dp/B09TPJ8GVX/ref=sr_1_3_sspa?keywords=mens+shoes&qid=1686380466&sprefix=mens+sho%2Caps%2C376&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"><img src="shoes1.jpg" width="60%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:50%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/ASIAN-Future-01-Sneakers-Lightweight-Numeric_9/dp/B09TPJ8GVX/ref=sr_1_3_sspa?keywords=mens+shoes&qid=1686380466&sprefix=mens+sho%2Caps%2C376&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">ASIAN Men's FUTURE-01 Sports Running,Walking & Gym Shoes with Eva Sole Extra Jump Casual Sneaker Shoes for Men's & Boy's</P></a><b style="color:red;margin-left:10%;">50% off</b><br><b style="margin-left:10%;">Rs.499</b>
+			<br><br><a href="https://www.amazon.in/ASIAN-Future-01-Sneakers-Lightweight-Numeric_9/dp/B09TPJ8GVX/ref=sr_1_3_sspa?keywords=mens+shoes&qid=1686380466&sprefix=mens+sho%2Caps%2C376&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<br>
+			<a href="https://www.amazon.in/Wonder-Firozi-Sports-Shoes-Indian/dp/B01N66F4CH/ref=sr_1_6?keywords=mens+shoes&qid=1686380466&sprefix=mens+sho%2Caps%2C376&sr=8-6"><img src="shoes2.jpg" width="50%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:50%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/Wonder-Firozi-Sports-Shoes-Indian/dp/B01N66F4CH/ref=sr_1_6?keywords=mens+shoes&qid=1686380466&sprefix=mens+sho%2Caps%2C376&sr=8-6">ASIAN Men's Cosko Sports Running,Walking,Gym,Training Sneaker Lace-Up Shoes for Men's & Boy's</P></a><b style="color:red;margin-left:10%;">45% off</b><br><b style="margin-left:10%;">Rs.549</b>
+			<br><br><a href="https://www.amazon.in/Wonder-Firozi-Sports-Shoes-Indian/dp/B01N66F4CH/ref=sr_1_6?keywords=mens+shoes&qid=1686380466&sprefix=mens+sho%2Caps%2C376&sr=8-6"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<a href="https://www.amazon.in/ASIAN-Mens-Cosco-Walking-Shoes/dp/B07FRTXSJF/ref=sr_1_4_sspa?keywords=mens+shoes&qid=1686380466&sprefix=mens+sho%2Caps%2C376&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"><img src="shoes3.jpg" width="60%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/ASIAN-Mens-Cosco-Walking-Shoes/dp/B07FRTXSJF/ref=sr_1_4_sspa?keywords=mens+shoes&qid=1686380466&sprefix=mens+sho%2Caps%2C376&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">ASIAN Men's Cosko Sports Running,Walking,Gym,Training Sneaker Lace-Up Shoes for Men's & Boy's</p></a><b style="color:red;margin-left:20%;">45% off</b><br><b style="margin-left:20%;">Rs.549</b>
+			<br><br><a href="https://www.amazon.in/ASIAN-Mens-Cosco-Walking-Shoes/dp/B07FRTXSJF/ref=sr_1_4_sspa?keywords=mens+shoes&qid=1686380466&sprefix=mens+sho%2Caps%2C376&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="shoes4.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">ASIAN Men's Cosko Sports Running,Walking,Gym,Training Sneaker Lace-Up Shoes for Men's & Boy's</P></a><b style="color:red;margin-left:30%;">50% off</b><br><b style="margin-left:30%;">Rs.449</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="shoes5.jpg" width="70%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">ASIAN Men's Cosko Sports Running,Walking,Gym,Training Sneaker Lace-Up Shoes for Men's & Boy's</P></a><b style="color:red;margin-left:30%;">68% off</b><br><b style="margin-left:30%;">Rs.499</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			</tr>
+			</div>
+			<div>
+			<tr>
+			
+			<td>
+			<img src="shoes6.jpg" width="80%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">ASIAN Men's Cosko Sports Running,Walking,Gym,Training Sneaker Lace-Up Shoes for Men's & Boy's</P></a><b style="color:red;margin-left:30%;">48% off</b><br><b style="margin-left:30%;">Rs.599</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<br>
+			<img src="shoes7.jpg" width="80%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">ASIAN Men's Cosko Sports Running,Walking,Gym,Training Sneaker Lace-Up Shoes for Men's & Boy's</P></a><b style="color:red;margin-left:30%;">58% off</b><br><b style="margin-left:30%;">Rs.699</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<img src="shoes8.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">ASIAN Men's Cosko Sports Running,Walking,Gym,Training Sneaker Lace-Up Shoes for Men's & Boy's</P></a><b style="color:red;margin-left:30%;">38% off</b><br><b style="margin-left:30%;">Rs.799</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="shoes9.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">ASIAN Men's Cosko Sports Running,Walking,Gym,Training Sneaker Lace-Up Shoes for Men's & Boy's</P></a><b style="color:red;margin-left:30%;">28% off</b><br><b style="margin-left:30%;">Rs.499</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="shoes10.jpg" width="70%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">ASIAN Men's Cosko Sports Running,Walking,Gym,Training Sneaker Lace-Up Shoes for Men's & Boy's</P></a><b style="color:red;margin-left:30%;">68% off</b><br><b style="margin-left:30%;">Rs.699</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			</tr>
+			</div>
+            </table>
+            </div>
+			</body>
+			</html>

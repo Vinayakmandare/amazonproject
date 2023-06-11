@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation Bar</title>
+		<meta name="viewport" content="width=device-width, initial-scale=0">
+        <style>
+		body{
+		width:100%;
+	   
+		}
+		td,tr{
+		border:1px solid black;
+		}
+            html{scroll-behavior: smooth;}
+            *{
+                margin:0;
+                padding:0;
+            }
+            nav{
+                display:flex;
+                justify-content: space-between;
+                background-color: rgb(227,226,222);
+                color:black;
+            }
+            nav ul{
+                width:25%;
+                margin-right: 50px;
+                display:flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style: none;
+            }
+            nav ul li{
+                cursor:pointer;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color:black;
+                padding:5px;
+            }
+            nav ul li a:hover{
+                border-bottom: solid red;
+				border-top:solid red;
+            
+            }
+            nav img{
+              height:50px;
+              margin-left: 10px;
+            }
+            .sub-container{
+                border:1px solid black;
+                width:100%;
+                height:1000vh;
+            }
+            #searchbar{
+                align: center;
+            }
+            #home{
+                
+            }
+			#img:hover{
+			width:80%;
+			
+			}
+			#btn1{
+			background-color:green;
+			border-color:red;
+			width:50%;
+			color:white;
+			}
+			#btn1:hover{
+			background-color:blue;
+			border-color:green;
+			
+			}
+			#btn2{
+			background-color:green;
+			border-color:red;
+			width:30%;
+			color:white;
+			margin-left:50px;
+			}
+           #btn2:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			#btn3{
+			background-color:green;
+			border-color:red;
+			width:25%;
+			color:white;
+			margin-left:50px;
+			}
+           #btn3:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			#btn4{
+			background-color:green;
+			border-color:red;
+			width:25%;
+			color:white;
+			margin-left:40px;
+			}
+           #btn4:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			#btn5{
+			background-color:green;
+			border-color:red;
+			width:25%;
+			color:white;
+			margin-left:70px;
+			}
+           #btn5:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color:bottom-border:solid red;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+ 
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: gray;color:white;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+		  #whatsapp{
+		  margin-left:10%;
+		  }
+
+		  
+        </style>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+			
+        </style>
+    </head>
+    <body>
+        <nav>
+            <img src="download (1).png" alt="Amazon">
+            
+            <input type="search"  placeholder="Search Amazon.in" style="width: 50%;border:5px solid yellow;">
+          
+               
+            <ul>
+                <li><a href="home.html">Home</a></li>
+              <li>  <a onclick="myFunction()" class="dropbtn">Menu</a>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="navigation.html">Electronics</a>
+    <a href="shirts.html" target="_blank">Mens Shirts</a>
+    <a href="shoes.html" >Mens Shoes</a>
+	 <a href="Travels.html" >Travells & School Bag</a>
+	  <a href="category.html">Choose Category</a>
+	
+  </div> </li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeago3fZ7iXsw7vEkkj97am-SQIg7n7U4_oQleX_xzGWgloVw/viewform?usp=sf_link">Contact</a></li> 
+                <li><a href="about.html">About</a></li>
+                
+            </ul>
+        </nav>
+		
+        <div class="container">
+            <div class="home sub-container" id="home" style="font-size:25px;text-align:center;"><br><br><h3>Electronics Accessories</h3>
+               <table>
+               <br><br>
+                <tr>
+                <td>
+				
+                <a href="vivoy56.html"><img src="vivo.jpg" width="60%"  id="img" style="margin-left:5%;" ></a><br><p style="width:50%;font-size:15px;margin-left:20%;"><a href="https://www.gsmarena.com/vivo_y56-12125.php">Vivo Y56 5G (Black Engine, 8GB RAM, 128GB Storage) with No Cost EMI/Additional Exchange Offers</a><br><b style="color:red">20% discount</b><br><b>Rs.19,999</b>
+				<br><br><a href="https://www.amazon.in/Vivo-Engine-Storage-Additional-Exchange/dp/B07WFPMD64/ref=sr_1_4?crid=3PKAYIGPSJS6R&keywords=vivo%2By53&qid=1686115937&sprefix=vivo%2By53%2Caps%2C295&sr=8-4&th=1"><button type="button" id="btn1">Buy Now</button></a>
+            </td>
+           <td>
+              <a href="oppok3.html"><img src="oppo.jpg" width="60%" id="img"  style="margin-left:5%;"></a><br><p style="width:70%;font-size:15px;margin-left:20%;"><a href="https://www.gsmarena.com/oppo_k3-9699.php">OPPO K3 (Aurora Blue,<br> 8GB RAM, AMOLED Display 128GB Storage, 3765mAH Battery) Refurbished</p></a><br><b style="color:red;margin-left:20%;">20% discount</b><br><b style="margin-left:20%;">Rs.18,999</b>
+               <br><a href="https://www.amazon.in/OPPO-Aurora-Blue-64GB-Storage/dp/B07PQ7CXLV"><button type="button" id="btn2">Buy Now</button> </a>       
+		   </td>
+            <td>
+              <a href="oneplus.html">  <img src="oneplus.jpg" width="50%"  id="img"  style="margin-left:5%;" ><br><p style="width:40%;font-size:15px;margin-left:30%;"><a href="https://www.gsmarena.com/oneplus_nord_ce_3_lite-12198.php" >OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)</p></a><br><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+				  <br><br><a href="https://www.amazon.in/OnePlus-Nord-Pastel-128GB-Storage/dp/B0BY8JZ22K/ref=sr_1_3?keywords=oneplus%2Bnord%2Bce%2B3%2Blite%2B5g&qid=1686116559&sprefix=oneplus%2Caps%2C346&sr=8-3&th=1"><button type="button" id="btn3">Buy Now</button></a>
+            </td>
+            <td>
+                 <a href="E://vin//redmi.html"><img src="redmi.jpg" width="40%" id="img"  style="margin-left:5%;" ><br><p style="width:50%;font-size:15px; margin-left:20%;"><a href="https://www.gsmarena.com/xiaomi_redmi_note_12_pro-11955.php">
+Redmi Note 12 Pro 5G (Glacier Blue, 8GB RAM, 256GB Storage)</p></a><b style="color:red;margin-left:20%;">20% discount</b><br><b style="margin-left:20%;">Rs.18,999</b>
+  <br><br><a href="https://www.amazon.in/Redmi-12-Pro-5G-Glacier/dp/B0BRVFZSGV/ref=sr_1_4?keywords=redmi+note+12+pro&qid=1686116609&sprefix=redmi+note%2Caps%2C552&sr=8-4"><button type="button" id="btn4">Buy Now</button></a>
+            </td>
+            <td>
+                <a href="E://vin//iphone.html"> <img src="iphone.jpg" width="60%" height="60%" id="img"   style="margin-left:5%;" ><br><p style="width:40%;font-size:15px; margin-left:20%;"><a href="https://www.gsmarena.com/apple_iphone_14_pro_max-11773.php">
+Apple iPhone 14 Pro (256 GB) - Deep Purple</p></a><b style="color:red;margin-left:5%;">8% off</b><br><b style="margin-left:20%;">Rs.1,19,999</b>
+  <br><br><a href="https://www.amazon.in/Apple-iPhone-128GB-Space-Black/dp/B0BDJ7P6NG/ref=sr_1_2?keywords=14+pro&qid=1686116662&sprefix=14+pro%2Caps%2C252&sr=8-2"><button type="button" id="btn5">Buy Now</button></a>
+            </td>
+            </tr> 
+			</div>
+			<div>
+                <tr>
+                <td>
+				
+              <a href="E://vin//realme.html">  <img src="mobile.jpg" width="60%"  id="img" style="margin-left:20%;" ><br><p style="width:50%;font-size:15px;margin-left:20%;"><a href=""><a href="https://www.gsmarena.com/realme_narzo_50i_prime-11630.php">realme narzo 50i Prime (Dark Blue 4GB RAM+64GB Storage) Octa-core Processor | 5000 mAh Battery</a><br><b style="color:red">20% discount</b><br><b>Rs.19,999</b>
+				<br><br><a href="#contact"><button type="button" id="btn1">Buy Now</button>
+            </td>
+           <td>
+                 <a href="E://vin//redminote.html"><img src="redmi11T.jpg" width="60%" id="img"  style="margin-left:10%;"><br><p style="width:70%;font-size:15px;margin-left:20%;"><a href="https://www.gsmarena.com/xiaomi_redmi_note_11t_5g-11217.php">Redmi Note 11T 5G (Stardust White, 8GB RAM, 128GB ROM) | Dimensity 810 5G | 33W Pro Fast Charging | Charger Included | Additional Exchange Offers| Get 2 Months of YouTube Premium Free!</p></a><br><b style="color:red;margin-left:20%;">20% discount</b><br><b style="margin-left:20%;">Rs.18,999</b>
+               <br><br><a href="#contact"><button type="button" id="btn2">Buy Now</button>           
+		   </td>
+            <td>
+                 <a href="E://vin//poco.html"><img src="poco.jpg" width="50%"  id="img"  style="margin-left:30%;" ><br><p style="width:40%;font-size:15px;margin-left:30%;"><a href="" >Poco C51 (Royal Blue, 64 GB) (4 GB RAM)</p></a><br><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+				  <br><br><a href="#contact"><button type="button" id="btn3">Buy Now</button>
+            </td>
+            <td>
+                <a href="E://vin//techno.html"><img src="Techno.jpg" width="40%" id="img"  style="margin-left:20%;" ><br><p style="width:50%;font-size:15px; margin-left:20%;"><a href="">
+Tecno Spark 8 Pro (Interstellar Black, 4GB RAM,64GB Storage) | 48MP Triple Camera | 33W Fast Charger</p></a><b style="color:red;margin-left:20%;">20% discount</b><br><b style="margin-left:20%;">Rs.18,999</b>
+  <br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+            </td>
+            <td>
+              <a href="E://vin//samsung.html">  <img src="samsung.jpg" width="60%" height="60%" id="img"   style="margin-left:10%;" ><br><p style="width:40%;font-size:15px; margin-left:20%;"><a href="">
+Samsung Galaxy M14 5G (Berry Blue, 6GB, 128GB Storage) | 50MP Triple Cam | 6000 mAh Battery</p></a><b style="color:red;margin-left:20%;">8% off</b><br><b style="margin-left:20%;">Rs.1,19,999</b>
+  <br><br><a href="#contact"><button type="button" id="btn5">Buy Now</button>
+            </td>
+            </tr> 
+			</div>
+			
+			<div>
+			<tr>
+			<td>
+			<a href="https://www.amazon.in/HP-Micro-Edge-Anti-Glare-Graphics-15s-eq2144au/dp/B09RZRF1PJ/ref=sr_1_1_sspa?crid=24KEJ39A800Q1&keywords=hp+15s+ryzen+5+5500u&qid=1686117979&sprefix=hp+15%2Caps%2C368&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">
+			<img src="lapy1.jpg" width="60%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/HP-Micro-Edge-Anti-Glare-Graphics-15s-eq2144au/dp/B09RZRF1PJ/ref=sr_1_1_sspa?crid=24KEJ39A800Q1&keywords=hp+15s+ryzen+5+5500u&qid=1686117979&sprefix=hp+15%2Caps%2C368&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">HP 15s- Ryzen 5-5500U 8GB RAM/512GB SSD 15.6 inch(39cm) Micro-Edge Anti-Glare FHD Laptop (Natural Silver/AMD Radeon Graphics/Alexa/Dual Speakers/Fast Charge/Windows 11/MS Office), 15s-eq2144au</P></a><b style="color:red;margin-left:15%;">(25% off)</b><br><b style="margin-left:%;">Rs.43,819</b>
+			<br><br><a href="https://www.amazon.in/HP-Micro-Edge-Anti-Glare-Graphics-15s-eq2144au/dp/B09RZRF1PJ/ref=sr_1_1_sspa?crid=24KEJ39A800Q1&keywords=hp+15s+ryzen+5+5500u&qid=1686117979&sprefix=hp+15%2Caps%2C368&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			<td>
+			<a href="https://www.amazon.in/Lenovo-39-62cm-Antiglare-Windows-82KDA01EIH/dp/B0B1DHXZDQ/ref=sr_1_16?crid=MOUWULSQSO72&keywords=lenovo+v15+ryzen+5+5500u+black&qid=1686119097&sprefix=lenovo+v15+ryzen+5+5500u%2Caps%2C261&sr=8-16">
+			<img src="lapy2.jpg" width="60%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/Lenovo-39-62cm-Antiglare-Windows-82KDA01EIH/dp/B0B1DHXZDQ/ref=sr_1_16?crid=MOUWULSQSO72&keywords=lenovo+v15+ryzen+5+5500u+black&qid=1686119097&sprefix=lenovo+v15+ryzen+5+5500u%2Caps%2C261&sr=8-16">LENOVO V15- Ryzen 5-5500U 8GB RAM/512GB SSD 15.6 inch(39cm) Micro-Edge Anti-Glare FHD Laptop (Natural Silver/AMD Radeon Graphics/Alexa/Dual Speakers/Fast Charge/Windows 11/MS Office), 15s-eq2144au</P></a><b style="color:red;margin-left:30%;">(18% off)</b><br><b style="margin-left:30%;">Rs.33,999</b>
+			<br><br><a href="https://www.amazon.in/Lenovo-39-62cm-Antiglare-Windows-82KDA01EIH/dp/B0B1DHXZDQ/ref=sr_1_16?crid=MOUWULSQSO72&keywords=lenovo+v15+ryzen+5+5500u+black&qid=1686119097&sprefix=lenovo+v15+ryzen+5+5500u%2Caps%2C261&sr=8-16"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			<td>
+			<a href="https://www.amazon.in/HP-i3-1115G4-Micro-Edge-Anti-Glare-14s-dy2507TU/dp/B0B63Y75P9/ref=sr_1_11_sspa?crid=MOUWULSQSO72&keywords=lenovo+v15+ryzen+5+5500u+black&qid=1686119097&sprefix=lenovo+v15+ryzen+5+5500u%2Caps%2C261&sr=8-11-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1"><img src="lappy3.jpg" width="60%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/HP-i3-1115G4-Micro-Edge-Anti-Glare-14s-dy2507TU/dp/B0B63Y75P9/ref=sr_1_11_sspa?crid=MOUWULSQSO72&keywords=lenovo+v15+ryzen+5+5500u+black&qid=1686119097&sprefix=lenovo+v15+ryzen+5+5500u%2Caps%2C261&sr=8-11-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1">HP 14s, 11th Gen Intel Core i3-1115G4, 8GB RAM/256GB SSD 14-inch(35.6 cm) Micro-Edge, Anti-Glare, FHD Laptop/Alexa Built-in/Win 11/Intel UHD Graphics/Dual Speakers/MSO 2021/1.41 Kg, 14s-dy2507TU</P></a><b style="color:red;margin-left:30%;">(18% off)</b><br><b style="margin-left:30%;">Rs.39,490</b>
+			<br><br><a href="https://www.amazon.in/HP-i3-1115G4-Micro-Edge-Anti-Glare-14s-dy2507TU/dp/B0B63Y75P9/ref=sr_1_11_sspa?crid=MOUWULSQSO72&keywords=lenovo+v15+ryzen+5+5500u+black&qid=1686119097&sprefix=lenovo+v15+ryzen+5+5500u%2Caps%2C261&sr=8-11-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			<td>
+			<a href="https://www.amazon.in/ASUS-Vivobook-16-0-inch-40-64-M1603QA-MB501WS/dp/B0B8ZT96HS/ref=sr_1_1_sspa?keywords=asus+vivobook+16x&qid=1686119338&sprefix=asus+vivo%2Caps%2C368&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"><img src="lappy4.jpg" width="60%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/ASUS-Vivobook-16-0-inch-40-64-M1603QA-MB501WS/dp/B0B8ZT96HS/ref=sr_1_1_sspa?keywords=asus+vivobook+16x&qid=1686119338&sprefix=asus+vivo%2Caps%2C368&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">ASUS Vivobook 16X (2022), 16-inch (40.64 cms) WUXGA, AMD Ryzen 5 5600H, Thin and Light Laptop (8GB/512GB SSD/Integrated Graphics/Windows 11/Office 2021/Quiet Blue/1.8 kg), M1603QA-MB502WS</P></a><b style="color:red;margin-left:30%;">(28% off)</b><br><b style="margin-left:30%;">Rs.49,490</b>
+			<br><br><a href="https://www.amazon.in/ASUS-Vivobook-16-0-inch-40-64-M1603QA-MB501WS/dp/B0B8ZT96HS/ref=sr_1_1_sspa?keywords=asus+vivobook+16x&qid=1686119338&sprefix=asus+vivo%2Caps%2C368&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			<td><a href="https://www.amazon.in/Dell-i5-1135G7-39-62Cms-Backlit-1-69Kgs/dp/B0C2HVX9W9/ref=sr_1_2_sspa?keywords=dell+inspiron+3520+i5+12th+gen&qid=1686119668&sprefix=dell+in%2Caps%2C402&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"><img src="lappy5.jpg" width="70%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/Dell-i5-1135G7-39-62Cms-Backlit-1-69Kgs/dp/B0C2HVX9W9/ref=sr_1_2_sspa?keywords=dell+inspiron+3520+i5+12th+gen&qid=1686119668&sprefix=dell+in%2Caps%2C402&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Dell Inspiron 3525 Laptop, AMD Ryzen 3-5425U, 8GB, 512GB, 15.6" (39.62 Cms) FHD WVA AG 120Hz 250 nits, Windows 11 + Office 21, Carbon Black (D560760WIN9B, 1.68Kgs)</P></a><b style="color:red;margin-left:30%;">(26% off)</b><br><b style="margin-left:30%;">Rs.52,490</b>
+			<br><br><a href="https://www.amazon.in/Dell-i5-1135G7-39-62Cms-Backlit-1-69Kgs/dp/B0C2HVX9W9/ref=sr_1_2_sspa?keywords=dell+inspiron+3520+i5+12th+gen&qid=1686119668&sprefix=dell+in%2Caps%2C402&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			</tr>
+			</div>
+			
+			<div>
+			<tr>
+			<td>
+			
+			<a href="https://www.amazon.in/Acer-Windows-Graphics-GeForce-A514-56GM/dp/B0C3HQBY4T/ref=sr_1_30?keywords=acer+laptop+i5&qid=1686120034&sprefix=acer+laptop+%2Caps%2C264&sr=8-30"><img src="acer.jpg" width="60%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:50%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/Acer-Windows-Graphics-GeForce-A514-56GM/dp/B0C3HQBY4T/ref=sr_1_30?keywords=acer+laptop+i5&qid=1686120034&sprefix=acer+laptop+%2Caps%2C264&sr=8-30">Acer Aspire 5 Gaming Laptop Intel Core i7 13th Gen (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX 2050) A514-56GM,14" WUXGA Display, 1.56 KG</P></a><b style="color:red;margin-left:30%;">(18% off)</b><br><b style="margin-left:30%;">Rs.80,990</b>
+			<br><br><a href="https://www.amazon.in/Acer-Windows-Graphics-GeForce-A514-56GM/dp/B0C3HQBY4T/ref=sr_1_30?keywords=acer+laptop+i5&qid=1686120034&sprefix=acer+laptop+%2Caps%2C264&sr=8-30"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			<td>
+			<img src="Lenovo.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">LENOVO V15- Ryzen 5-5500U 8GB RAM/512GB SSD 15.6 inch(39cm) Micro-Edge Anti-Glare FHD Laptop (Natural Silver/AMD Radeon Graphics/Alexa/Dual Speakers/Fast Charge/Windows 11/MS Office), 15s-eq2144au</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<a href="https://www.amazon.in/Lenovo-IdeaPad-39-62cm-Warranty-82RK006DIN/dp/B0B4JPC8GT/ref=sr_1_2_sspa?crid=3G0VE6FVMG0I0&keywords=laptop&qid=1686120348&sprefix=laptop%2Caps%2C273&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"><img src="Lenovo1.jpg" width="60%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/Lenovo-IdeaPad-39-62cm-Warranty-82RK006DIN/dp/B0B4JPC8GT/ref=sr_1_2_sspa?crid=3G0VE6FVMG0I0&keywords=laptop&qid=1686120348&sprefix=laptop%2Caps%2C273&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Lenovo IdeaPad Slim 3 Intel Core i3 12th Gen 15.6" (39.62cm) FHD Thin & Light Laptop (8GB/512GB SSD/Windows 11/Office 2021/2Yr Warranty/3months Game Pass/Arctic Grey/1.63Kg), 82RK006DIN</P></a><b style="color:red;margin-left:30%;">(40% off)</b><br><b style="margin-left:30%;">Rs.39,990</b>
+			<br><br><a href="https://www.amazon.in/Lenovo-IdeaPad-39-62cm-Warranty-82RK006DIN/dp/B0B4JPC8GT/ref=sr_1_2_sspa?crid=3G0VE6FVMG0I0&keywords=laptop&qid=1686120348&sprefix=laptop%2Caps%2C273&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			<td><a href="https://www.amazon.in/Lenovo-ThinkBook-39-62cm-Antiglare-21DJA04LIH/dp/B0BDM69W6P/ref=sr_1_2_sspa?crid=3ELYNS1OEFGN9&keywords=thinkbook&qid=1686120494&sprefix=thinkbook%2Caps%2C259&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"><img src="lenovo2.jpg" width="60%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/Lenovo-ThinkBook-39-62cm-Antiglare-21DJA04LIH/dp/B0BDM69W6P/ref=sr_1_2_sspa?crid=3ELYNS1OEFGN9&keywords=thinkbook&qid=1686120494&sprefix=thinkbook%2Caps%2C259&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Lenovo ThinkBook 15 Intel 12th Gen Core i5 15.6" (39.62cm) FHD 250 nits Antiglare Thin and Light Laptop (16GB/512GB SSD/Windows 11 Home/MS Office H&S 2021/Backlit/Mineral Grey/1.7 Kg), 21DJA04LIH</P></a><b style="color:red;margin-left:30%;">(39% off)</b><br><b style="margin-left:30%;">Rs.64,990</b>
+			<br><br><a href="https://www.amazon.in/Lenovo-ThinkBook-39-62cm-Antiglare-21DJA04LIH/dp/B0BDM69W6P/ref=sr_1_2_sspa?crid=3ELYNS1OEFGN9&keywords=thinkbook&qid=1686120494&sprefix=thinkbook%2Caps%2C259&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			<td><a href="https://www.amazon.in/2022-Apple-MacBook-Laptop-chip/dp/B0B3C6FBPF/ref=sr_1_1_sspa?keywords=macbook&qid=1686120734&sprefix=mac%2Caps%2C275&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"><img src="macbook.jpg" width="70%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/2022-Apple-MacBook-Laptop-chip/dp/B0B3C6FBPF/ref=sr_1_1_sspa?keywords=macbook&qid=1686120734&sprefix=mac%2Caps%2C275&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Apple 2022 MacBook Air Laptop with M2 chip: 34.46 cm (13.6-inch) Liquid Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone/iPad; Starlight</P></a><b style="color:red;margin-left:30%;">(10% off)</b><br><b style="margin-left:30%;">Rs.1,07,990</b>
+			<br><br><a href="https://www.amazon.in/2022-Apple-MacBook-Laptop-chip/dp/B0B3C6FBPF/ref=sr_1_1_sspa?keywords=macbook&qid=1686120734&sprefix=mac%2Caps%2C275&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			</tr>
+			</div>
+			<div>
+			<tr>
+			
+			<td>
+			<a href="https://www.amazon.in/Fire-Boltt-Bluetooth-Calling-Assistance-Resolution/dp/B0BF57RN3K/ref=sr_1_3?keywords=smart+watch+for+men&qid=1686121171&sprefix=smart%2Caps%2C310&sr=8-3"><img src="watch2.jpg" width="60%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/Fire-Boltt-Bluetooth-Calling-Assistance-Resolution/dp/B0BF57RN3K/ref=sr_1_3?keywords=smart+watch+for+men&qid=1686121171&sprefix=smart%2Caps%2C310&sr=8-3">Fire-Boltt Ninja Call Pro Plus 1.83" Smart Watch with Bluetooth Calling, AI Voice Assistance, 100 Sports Modes IP67 Rating, 240 * 280 Pixel High Resolution (Black)</P></a><b style="color:red;margin-left:30%;">(92% off)</b><br><b style="margin-left:30%;">Rs.1,599</b>
+			<br><br><a href="https://www.amazon.in/Fire-Boltt-Bluetooth-Calling-Assistance-Resolution/dp/B0BF57RN3K/ref=sr_1_3?keywords=smart+watch+for+men&qid=1686121171&sprefix=smart%2Caps%2C310&sr=8-3"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			<td>
+			<br>
+			<a href="https://www.amazon.in/Bluetooth-Calling-Touchscreen-Activity-Tracker/dp/B09RMXNW25/ref=sr_1_15?crid=2KT06LNUTYRA3&keywords=simple%2Bsmart%2Bwatch&qid=1686122471&sprefix=simple%2Bsmart%2Bwatch%2Caps%2C248&sr=8-15&th=1">
+			<img src="watch.jpg" width="50%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:50%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/Bluetooth-Calling-Touchscreen-Activity-Tracker/dp/B09RMXNW25/ref=sr_1_15?crid=2KT06LNUTYRA3&keywords=simple%2Bsmart%2Bwatch&qid=1686122471&sprefix=simple%2Bsmart%2Bwatch%2Caps%2C248&sr=8-15&th=1">VELL - TECH Smartwatch for boys Y68 Bluetooth Calling Smart Touchscreen Smart Watch Bluetooth 1.44 HD Screen Smart Watch with Daily Activity Tracker, Heart Rate Sensor, Sleep Monitor</P></a><b style="color:red;margin-left:30%;">-75%</b><br><b style="margin-left:30%;">Rs.499</b>
+			<br><br><a href="https://www.amazon.in/Bluetooth-Calling-Touchscreen-Activity-Tracker/dp/B09RMXNW25/ref=sr_1_15?crid=2KT06LNUTYRA3&keywords=simple%2Bsmart%2Bwatch&qid=1686122471&sprefix=simple%2Bsmart%2Bwatch%2Caps%2C248&sr=8-15&th=1"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<a href="https://www.amazon.in/boAt-Ultima-Call-Max-Sedentary/dp/B0C45TDR6W/ref=sr_1_4?keywords=boat+newly+launched+smart+watch&qid=1686122117&sprefix=boat+newly%2Caps%2C540&sr=8-4">
+			<img src="watch3.jpg" width="60%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/boAt-Ultima-Call-Max-Sedentary/dp/B0C45TDR6W/ref=sr_1_4?keywords=boat+newly+launched+smart+watch&qid=1686122117&sprefix=boat+newly%2Caps%2C540&sr=8-4">boAt Newly Launched Ultima Call Max with 2" Big HD Display, Advanced BT Calling, 100+ Sports Modes, 10 Days Battery Life, Multiple Watch Faces, IP68, HR & SpO2, Sedentary Alerts(Active Black)</P></a><b style="color:red;margin-left:30%;">-60%</b><br><b style="margin-left:30%;">Rs.2,499</b>
+			<br><br><a href="https://www.amazon.in/boAt-Ultima-Call-Max-Sedentary/dp/B0C45TDR6W/ref=sr_1_4?keywords=boat+newly+launched+smart+watch&qid=1686122117&sprefix=boat+newly%2Caps%2C540&sr=8-4"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			<td><a href="https://www.amazon.in/Fastrack-Limitless-Biggest-SingleSync-Watchfaces/dp/B0BZ8T21V4/ref=sr_1_5?keywords=smart+watch+for+men&qid=1686121171&sprefix=smart%2Caps%2C310&sr=8-5"><img src="watch4.jpg" width="60%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/Fastrack-Limitless-Biggest-SingleSync-Watchfaces/dp/B0BZ8T21V4/ref=sr_1_5?keywords=smart+watch+for+men&qid=1686121171&sprefix=smart%2Caps%2C310&sr=8-5">Fastrack New Limitless FS1 Smart Watch|Biggest 1.95" Horizon Curve Display|SingleSync BT Calling v5.3|Built-in Alexa|Upto 5 Day Battery|ATS Chipset with Zero Lag|100+ Sports</P></a><b style="color:red;margin-left:30%;">-49%</b><br><b style="margin-left:30%;">Rs.2,295</b>
+			<br><br><a href="https://www.amazon.in/Fastrack-Limitless-Biggest-SingleSync-Watchfaces/dp/B0BZ8T21V4/ref=sr_1_5?keywords=smart+watch+for+men&qid=1686121171&sprefix=smart%2Caps%2C310&sr=8-5"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			<td><a href="https://www.amazon.in/Noise-ColorFit-Display-Monitoring-Smartwatches/dp/B09NVPSCQT/ref=sr_1_4?keywords=smart+watch+for+men&qid=1686121171&sprefix=smart%2Caps%2C310&sr=8-4"><img src="watch5.jpg" width="70%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/Noise-ColorFit-Display-Monitoring-Smartwatches/dp/B09NVPSCQT/ref=sr_1_4?keywords=smart+watch+for+men&qid=1686121171&sprefix=smart%2Caps%2C310&sr=8-4">Noise ColorFit Pulse Grand Smart Watch with 1.69"(4.29cm) HD Display, 60 Sports Modes, 150 Watch Faces, Fast Charge, Spo2, Stress, Sleep, Heart Rate Monitoring & IP68 Waterproof (Jet Black)</P></a><b style="color:red;margin-left:30%;">68% off</b><br><b style="margin-left:30%;">Rs.1,299</b>
+			<br><br><a href="https://www.amazon.in/Noise-ColorFit-Display-Monitoring-Smartwatches/dp/B09NVPSCQT/ref=sr_1_4?keywords=smart+watch+for+men&qid=1686121171&sprefix=smart%2Caps%2C310&sr=8-4"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			</tr>
+			</div>
+			<div>
+			<tr>
+			<td>
+			<a href="https://www.amazon.in/Noise-Launched-Bluetooth-Calling-Tracking/dp/B0BJ72WZQ7/ref=sr_1_7?keywords=smart+watch+for+men&qid=1686121171&sprefix=smart%2Caps%2C310&sr=8-7"><img src="watch6.jpg" width="60%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/Noise-Launched-Bluetooth-Calling-Tracking/dp/B0BJ72WZQ7/ref=sr_1_7?keywords=smart+watch+for+men&qid=1686121171&sprefix=smart%2Caps%2C310&sr=8-7">Noise Twist Bluetooth Calling Smart Watch with 1.38" TFT Biggest Display, Up-to 7 Days Battery, 100+ Watch Faces, IP68, Heart Rate Monitor, Sleep Tracking (Jet Black)</P></a><b style="color:red;margin-left:30%;">-64%</b><br><b style="margin-left:30%;">Rs.1,799</b>
+			<br><br><a href="https://www.amazon.in/Noise-Launched-Bluetooth-Calling-Tracking/dp/B0BJ72WZQ7/ref=sr_1_7?keywords=smart+watch+for+men&qid=1686121171&sprefix=smart%2Caps%2C310&sr=8-7"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			<td>
+			<br>
+			<a href="https://www.amazon.in/Noise-ColorFit-Display-Monitoring-Smartwatches/dp/B09NVPSCQT/ref=sr_1_4?keywords=smart+watch+for+men&qid=1686121171&sprefix=smart%2Caps%2C310&sr=8-4">
+			<img src="watch7.jpg" width="50%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/Noise-ColorFit-Display-Monitoring-Smartwatches/dp/B09NVPSCQT/ref=sr_1_4?keywords=smart+watch+for+men&qid=1686121171&sprefix=smart%2Caps%2C310&sr=8-4">boAt Wave Call Smart Watch, Smart Talk with Advanced Dedicated Bluetooth Calling Chip, 1.69 HD Display with 550 NITS & 70% Color Gamut, 150+ Watch Faces, Multi-Sport Modes,HR,SpO2, IP68(Active Black)</P></a><b style="color:red;margin-left:30%;">-65%</b><br><b style="margin-left:30%;">Rs.1,999</b>
+			<br><br><a href="https://www.amazon.in/Noise-ColorFit-Display-Monitoring-Smartwatches/dp/B09NVPSCQT/ref=sr_1_4?keywords=smart+watch+for+men&qid=1686121171&sprefix=smart%2Caps%2C310&sr=8-4"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			<td>
+			<a href="https://www.amazon.in/boAt-Display-Multiple-Monitoring-Charcoal/dp/B09MQSCJQ1/ref=sr_1_8?keywords=smart+watch+for+men&qid=1686121171&sprefix=smart%2Caps%2C310&sr=8-8">
+			<img src="watch8.jpg" width="60%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/boAt-Display-Multiple-Monitoring-Charcoal/dp/B09MQSCJQ1/ref=sr_1_8?keywords=smart+watch+for+men&qid=1686121171&sprefix=smart%2Caps%2C310&sr=8-8"> boAt Xtend Smartwatch with Alexa Built-in, 1.69” HD Display, Multiple Watch Faces, Stress Monitor, Heart & SpO2 Monitoring, 14 Sports Modes, Sleep Monitor, 5 ATM & 7 Days Battery(Charcoal Black)</P></a><b style="color:red;margin-left:30%;">-65%</b><br><b style="margin-left:30%;">Rs.2,799</b>
+			<br><br><a href="https://www.amazon.in/boAt-Display-Multiple-Monitoring-Charcoal/dp/B09MQSCJQ1/ref=sr_1_8?keywords=smart+watch+for+men&qid=1686121171&sprefix=smart%2Caps%2C310&sr=8-8"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			<td><a href="https://www.amazon.in/Hammer-Ace-3-0-Bluetooth-Metallic/dp/B0BV6FVKSP/ref=sr_1_27?keywords=smart+watch&qid=1686122263&sprefix=smart+%2Caps%2C316&sr=8-27">
+			<img src="watch9.jpg" width="60%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/Hammer-Ace-3-0-Bluetooth-Metallic/dp/B0BV6FVKSP/ref=sr_1_27?keywords=smart+watch&qid=1686122263&sprefix=smart+%2Caps%2C316&sr=8-27">Hammer Ace 3.0 Bluetooth Calling Smart Watch with Largest 1.85" IPS Display, Dual Mode, Spo2, Heart Rate, Strong Metallic Body & Skin Friendly Strap (Black)</P></a><b style="color:red;margin-left:30%;">-70%</b><br><b style="margin-left:30%;">Rs.1,499</b>
+			<br><br><a href="https://www.amazon.in/Hammer-Ace-3-0-Bluetooth-Metallic/dp/B0BV6FVKSP/ref=sr_1_27?keywords=smart+watch&qid=1686122263&sprefix=smart+%2Caps%2C316&sr=8-27"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			<td><a href="https://www.amazon.in/boAt-Electra-Ultra-Seamless-Personalization-Charcoal/dp/B0BNV7JM5Y/ref=sr_1_21?crid=34M3F4WCG6XYN&keywords=boat+smart+watch+for+men&qid=1686123601&sprefix=boat+smart+watch+for+men%2Caps%2C271&sr=8-21" ><img src="watch10.jpg" width="70%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/boAt-Electra-Ultra-Seamless-Personalization-Charcoal/dp/B0BNV7JM5Y/ref=sr_1_21?crid=34M3F4WCG6XYN&keywords=boat+smart+watch+for+men&qid=1686123601&sprefix=boat+smart+watch+for+men%2Caps%2C271&sr=8-21">boAt Wave Electra with 1.81" HD Display, Smart Calling with Ultra-Seamless BT Calling Chip,20 Built-in Watch Faces,100 + Sports Modes,Menu Personalization,in-Built Games(Charcoal Black)</P></a><b style="color:red;margin-left:30%;">68% off</b><br><b style="margin-left:30%;">Rs.1,299</b>
+			<br><br><a href="https://www.amazon.in/boAt-Electra-Ultra-Seamless-Personalization-Charcoal/dp/B0BNV7JM5Y/ref=sr_1_21?crid=34M3F4WCG6XYN&keywords=boat+smart+watch+for+men&qid=1686123601&sprefix=boat+smart+watch+for+men%2Caps%2C271&sr=8-21"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			</tr>
+			</div>
+			<div>
+			<tr>
+			<td>
+			<a href="https://www.amazon.in/Renewed-OPTIPLEX-Upgraded-Graphics-Ethernet/dp/B09RF7KBJK/ref=sr_1_13?crid=3G7MR8HA7LGEE&keywords=desktop&qid=1686124567&sprefix=desktop%2Caps%2C258&sr=8-13">
+			<img src="desktop.jpg" width="30%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/Renewed-OPTIPLEX-Upgraded-Graphics-Ethernet/dp/B09RF7KBJK/ref=sr_1_13?crid=3G7MR8HA7LGEE&keywords=desktop&qid=1686124567&sprefix=desktop%2Caps%2C258&sr=8-13">Dell (Renewed) OPTIPLEX 3040 Tiny Desktop (Intel Core i3 6th gen 3.2ghz, 8 GB RAM, 480gb SSD, Windows 11 (Upgraded), MS Office/ Intel HD Graphics/, USB 3.0, Ethernet,VGA), Black</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.10,435</b>
+			<br><br><a href="https://www.amazon.in/Renewed-OPTIPLEX-Upgraded-Graphics-Ethernet/dp/B09RF7KBJK/ref=sr_1_13?crid=3G7MR8HA7LGEE&keywords=desktop&qid=1686124567&sprefix=desktop%2Caps%2C258&sr=8-13"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			<td>
+			<br>
+			<img src="desktop1.jpg" width="30%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Fire-Boltt Gladiator 1.96" Biggest Display Smart Watch with Bluetooth Calling, Voice Assistant &123 Sports Modes, 8 Unique UI Interactions, SpO2, 24/7 Heart Rate Tracking (Black)</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<a href="https://www.amazon.in/ASUS-Pentium-Integrated-Graphics-V222GAK-BA034W/dp/B0BBXLFCP2/ref=sr_1_8?crid=2NUI5AOBUGZ4Q&keywords=computer&qid=1686123749&sprefix=compute%2Caps%2C477&sr=8-8">
+			<img src="desktop5.jpg" width="60%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/ASUS-Pentium-Integrated-Graphics-V222GAK-BA034W/dp/B0BBXLFCP2/ref=sr_1_8?crid=2NUI5AOBUGZ4Q&keywords=computer&qid=1686123749&sprefix=compute%2Caps%2C477&sr=8-8">ASUS Vivo AiO V222, 4 core Intel Pentium Silver J5040, All-in-One Desktop (8GB/256GB SSD/Integrated Graphics/Windows 11/Black/4.8 kg), V222GAK-BA034W</P></a><b style="color:red;margin-left:30%;">-35%</b><br><b style="margin-left:30%;">Rs.32,990</b>
+			<br><br><a href="https://www.amazon.in/ASUS-Pentium-Integrated-Graphics-V222GAK-BA034W/dp/B0BBXLFCP2/ref=sr_1_8?crid=2NUI5AOBUGZ4Q&keywords=computer&qid=1686123749&sprefix=compute%2Caps%2C477&sr=8-8"><button type="button" id="btn4">Buy Now</button></a> 
+			</td>
+			<td><a href="https://www.amazon.in/Dell-Optiplex-Computer-Keyboard-Speakers/dp/B09Y3CQMBD/ref=sr_1_7?crid=2NUI5AOBUGZ4Q&keywords=computer&qid=1686123749&sprefix=compute%2Caps%2C477&sr=8-7">
+			<img src="desktop3.jpg" width="60%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/Dell-Optiplex-Computer-Keyboard-Speakers/dp/B09Y3CQMBD/ref=sr_1_7?crid=2NUI5AOBUGZ4Q&keywords=computer&qid=1686123749&sprefix=compute%2Caps%2C477&sr=8-7">(Renewed) Dell Optiplex 19" All-in-One Desktop Computer Set(Intel i5 3470/8 GB/1TB HDD /19" HD Monitor+Keyboard+Mouse+ HD Webcam+Mic+Speakers+WiFi+Display Port/Windows 10 Pro/MS Office)</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.17,999</b>
+			<br><br><a href="https://www.amazon.in/Dell-Optiplex-Computer-Keyboard-Speakers/dp/B09Y3CQMBD/ref=sr_1_7?crid=2NUI5AOBUGZ4Q&keywords=computer&qid=1686123749&sprefix=compute%2Caps%2C477&sr=8-7"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			<td>
+			<a href="https://www.amazon.in/Desktop-Complete-Computer-Business-Generation/dp/B0BZS2297Y/ref=sr_1_11_sspa?crid=2NUI5AOBUGZ4Q&keywords=computer&qid=1686123749&sprefix=compute%2Caps%2C477&sr=8-11-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1&smid=A6BE4C9F8551W">
+			<img src="desktop4.jpg" width="70%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/Desktop-Complete-Computer-Business-Generation/dp/B0BZS2297Y/ref=sr_1_11_sspa?crid=2NUI5AOBUGZ4Q&keywords=computer&qid=1686123749&sprefix=compute%2Caps%2C477&sr=8-11-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1&smid=A6BE4C9F8551W">Core i5 Desktop Complete Computer System for Home & Business (Core i5 4th Generation, 8GB RAM - 512GB SSD)</P></a><b style="color:red;margin-left:30%;">30% off</b><br><b style="margin-left:30%;">Rs.20,900</b>
+			<br><br><a href="https://www.amazon.in/Desktop-Complete-Computer-Business-Generation/dp/B0BZS2297Y/ref=sr_1_11_sspa?crid=2NUI5AOBUGZ4Q&keywords=computer&qid=1686123749&sprefix=compute%2Caps%2C477&sr=8-11-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1&smid=A6BE4C9F8551W"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			</tr>
+			</div>
+			<div>
+			<td>
+			<br>
+			<a href="https://www.amazon.in/BitFry-Complete-Computer-Business-256GB/dp/B0C38HFX5K/ref=sr_1_1_sspa?keywords=desktop%2Bcomputer&qid=1686124773&sprefix=desktop%2Caps%2C247&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">
+			<img src="desktop6.jpg" width="60%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/BitFry-Complete-Computer-Business-256GB/dp/B0C38HFX5K/ref=sr_1_1_sspa?keywords=desktop%2Bcomputer&qid=1686124773&sprefix=desktop%2Caps%2C247&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">BitFry Core i5 2nd Gen 3.1 Ghz Complete Computer Set for Home & Business (8GB RAM / 256GB SSD)</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.14,990</b>
+			<br><br><a href="https://www.amazon.in/BitFry-Complete-Computer-Business-256GB/dp/B0C38HFX5K/ref=sr_1_1_sspa?keywords=desktop%2Bcomputer&qid=1686124773&sprefix=desktop%2Caps%2C247&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			<td>
+			<img src="computer100.jpg" width="80%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">BitFry Core i5 10th Generation Complete Desktop PC (2GB Graphic Card, 16GB RAM-512GB nVME SSD)</P></a><b style="color:red;margin-left:30%;">28% off</b><br><b style="margin-left:30%;">Rs.52,000</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="desktop8.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">(Renewed) Lenovo ThinkCentre M93P Mini PC (Intel Core i5 4th gen, 8 GB RAM, 256 GB SSD, Windows 10 Pro, MS Office|Intel HD Graphics|USB, Ethernet,VGA|PAN India Warranty), Black</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.9,989</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="desktop9.jpg" width="70%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">(Renewed) Dell Optiplex 19 Inch All in One Desktop Set ( Intel i5 2nd Gen/ 8 GB/ 500 GB HDD /19" HD Monitor+Keyboard+Mouse+ HD Webcam+Mic+Speakers+Wifi+Display Port)/Windows 10 Pro/MS Office</P></a><b style="color:red;margin-left:30%;">68% off</b><br><b style="margin-left:30%;">Rs.15,996</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<a href="https://www.amazon.in/Dell-Optiplex-Graphics-Ethernet-Warranty/dp/B09G72TXY8/ref=sr_1_6?keywords=dell+desktop+mini+pc&qid=1686125457&sprefix=mini+desktop+dell%2Caps%2C254&sr=8-6">
+			<img src="desktop10.jpg" width="70%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/Dell-Optiplex-Graphics-Ethernet-Warranty/dp/B09G72TXY8/ref=sr_1_6?keywords=dell+desktop+mini+pc&qid=1686125457&sprefix=mini+desktop+dell%2Caps%2C254&sr=8-6">(Renewed) Dell Optiplex 3020 Mini PC (Intel Core I5 4th gen, 8 GB RAM, 256 GB SSD, Windows 10 Pro, MS Office, HD Graphics, USB, Ethernet,VGA), Black</P></a><b style="color:red;margin-left:30%;">68% off</b><br><b style="margin-left:30%;">Rs.10,903</b>
+			<br><br><a href="https://www.amazon.in/Dell-Optiplex-Graphics-Ethernet-Warranty/dp/B09G72TXY8/ref=sr_1_6?keywords=dell+desktop+mini+pc&qid=1686125457&sprefix=mini+desktop+dell%2Caps%2C254&sr=8-6"><button type="button" id="btn4">Buy Now</button></a>
+			</td>
+			</tr>
+			</div>
+          
+		  
+		  
+		  <div>
+			<tr>
+			<td>
+			<img src="home1.jpg" width="70%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Fire-Boltt Ninja Call Pro Plus 1.83" Smart Watch with Bluetooth Calling, AI Voice Assistance, 100 Sports Modes IP67 Rating, 240 * 280 Pixel High Resolution (Black)</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<br>
+			<img src="home2.jpg" width="70%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Fire-Boltt Gladiator 1.96" Biggest Display Smart Watch with Bluetooth Calling, Voice Assistant &123 Sports Modes, 8 Unique UI Interactions, SpO2, 24/7 Heart Rate Tracking (Black)</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<img src="home3.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">boAt Newly Launched Ultima Call Max with 2" Big HD Display, Advanced BT Calling, 100+ Sports Modes, 10 Days Battery Life, Multiple Watch Faces, IP68, HR & SpO2, Sedentary Alerts(Active Black)</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="home4.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Fastrack New Limitless FS1 Smart Watch|Biggest 1.95" Horizon Curve Display|SingleSync BT Calling v5.3|Built-in Alexa|Upto 5 Day Battery|ATS Chipset with Zero Lag|100+ Sports</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="home5.jpg" width="50%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Noise ColorFit Pulse Grand Smart Watch with 1.69"(4.29cm) HD Display, 60 Sports Modes, 150 Watch Faces, Fast Charge, Spo2, Stress, Sleep, Heart Rate Monitoring & IP68 Waterproof (Jet Black)</P></a><b style="color:red;margin-left:30%;">68% off</b><br><b style="margin-left:30%;">Rs.1,299</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			</tr>
+			</div>
+			<div>
+			<td>
+			<br>
+			<img src="home6.jpg" width="70%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Fire-Boltt Gladiator 1.96" Biggest Display Smart Watch with Bluetooth Calling, Voice Assistant &123 Sports Modes, 8 Unique UI Interactions, SpO2, 24/7 Heart Rate Tracking (Black)</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<img src="home7.jpg" width="70%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">boAt Newly Launched Ultima Call Max with 2" Big HD Display, Advanced BT Calling, 100+ Sports Modes, 10 Days Battery Life, Multiple Watch Faces, IP68, HR & SpO2, Sedentary Alerts(Active Black)</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="home8.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Fastrack New Limitless FS1 Smart Watch|Biggest 1.95" Horizon Curve Display|SingleSync BT Calling v5.3|Built-in Alexa|Upto 5 Day Battery|ATS Chipset with Zero Lag|100+ Sports</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="home9.jpg" width="70%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Noise ColorFit Pulse Grand Smart Watch with 1.69"(4.29cm) HD Display, 60 Sports Modes, 150 Watch Faces, Fast Charge, Spo2, Stress, Sleep, Heart Rate Monitoring & IP68 Waterproof (Jet Black)</P></a><b style="color:red;margin-left:30%;">68% off</b><br><b style="margin-left:30%;">Rs.1,299</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="home10.jpg" width="30%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Noise ColorFit Pulse Grand Smart Watch with 1.69"(4.29cm) HD Display, 60 Sports Modes, 150 Watch Faces, Fast Charge, Spo2, Stress, Sleep, Heart Rate Monitoring & IP68 Waterproof (Jet Black)</P></a><b style="color:red;margin-left:30%;">68% off</b><br><b style="margin-left:30%;">Rs.1,299</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			</tr>
+			</div>
+			
+       </div> 
+    </body>
+</html>

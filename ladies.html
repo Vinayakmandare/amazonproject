@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+		width:100%;
+	   
+		}
+		td,tr{
+		border:1px solid black;
+		}
+            html{scroll-behavior: smooth;}
+            *{
+                margin:0;
+                padding:0;
+            }
+            nav{
+                display:flex;
+                justify-content: space-between;
+                background-color: rgb(227,226,222);
+                color:black;
+            }
+            nav ul{
+                width:25%;
+                margin-right: 50px;
+                display:flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style: none;
+            }
+            nav ul li{
+                cursor:pointer;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color:black;
+                padding:5px;
+            }
+            nav ul li a:hover{
+                border-bottom: solid red;
+				border-top:solid red;
+            
+            }
+            nav img{
+              height:50px;
+              margin-left: 10px;
+            }
+            .sub-container{
+                border:1px solid black;
+                width:100%;
+                height:500vh;
+            }
+            #searchbar{
+                align: center;
+            }
+            #home{
+                
+            }
+			#img:hover{
+			width:80%;
+			
+			}
+			#btn1{
+			background-color:green;
+			border-color:red;
+			width:50%;
+			color:white;
+			}
+			#btn1:hover{
+			background-color:blue;
+			border-color:green;
+			
+			}
+			#btn2{
+			background-color:green;
+			border-color:red;
+			width:30%;
+			color:white;
+			margin-left:50px;
+			}
+           #btn2:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			#btn3{
+			background-color:green;
+			border-color:red;
+			width:25%;
+			color:white;
+			margin-left:100px;
+			}
+           #btn3:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			#btn4{
+			background-color:green;
+			border-color:red;
+			width:25%;
+			color:white;
+			margin-left:70px;
+			}
+           #btn4:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			#btn5{
+			background-color:green;
+			border-color:red;
+			width:25%;
+			color:white;
+			margin-left:70px;
+			}
+           #btn5:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color:bottom-border:solid red;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+ 
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: gray;color:white;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+		  #whatsapp{
+		  margin-left:10%;
+		  }
+
+		  </style>
+        
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+			
+        </style>
+    </head>
+    <body>
+        <nav>
+            <img src="download (1).png" alt="Amazon">
+            
+            <input type="search"  placeholder="Search Amazon.in" style="width:  50%;border:5px solid yellow;">
+          
+               
+            <ul>
+                <li><a href="index.html">Home</a></li>
+              <li>  <a onclick="myFunction()" class="dropbtn">Menu</a>
+  <div id="myDropdown" class="dropdown-content">
+	<a href="navigation.html">Electronics</a>
+    <a href="shirts.html" target="_blank">Mens Shirts</a>
+    <a href="shoes.html" >Mens Shoes</a>
+	 <a href="Travels.html" >Travells & School Bag</a>
+	  <a href="category.html">Choose Category</a>
+	
+  </div> </li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeago3fZ7iXsw7vEkkj97am-SQIg7n7U4_oQleX_xzGWgloVw/viewform?usp=sf_link">Contact</a></li> 
+                <li><a href="about.html">About</a></li>
+                
+            </ul>
+        </nav>
+		 <div class="container">
+            <div class="home sub-container" id="home" style="font-size:25px;text-align:center;"><br><h3>Ladies Fashion</h3>
+
+		<table>
+			<tr>
+			<td>
+			<img src="ladies1.jpg" width="50%" id="img" style="margin-left:10%;"><br>
+			<p style="width:50%;font-size:15px;margin-left:20%;"><a href="">LG 185 L 5 Star Inverter Direct-Cool Single Door Refrigerator (GL-D201ABPU, Blue Plumeria, Fast Ice Making, Base stand with drawer)</P></a><b style="color:red;margin-left:30%;">(44% off)</b><br><b style="margin-left:30%;">Rs.17,290</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<br>
+			<a href="https://www.amazon.in/Stylista-Waterproof-Washing-Machine-Compatible/dp/B083TYKGL4/ref=sr_1_33?crid=1GA9ZZZA6P7YE&keywords=washing+machine&nav_sdd=aps&qid=1686390277&refinements=p_36%3A5271572031&rnid=5271547031&s=kitchen&sprefix=washing+&sr=1-33"><img src="ladies2.jpg" width="50%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:50%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/Stylista-Waterproof-Washing-Machine-Compatible/dp/B083TYKGL4/ref=sr_1_33?crid=1GA9ZZZA6P7YE&keywords=washing+machine&nav_sdd=aps&qid=1686390277&refinements=p_36%3A5271572031&rnid=5271547031&s=kitchen&sprefix=washing+&sr=1-33">LG 185 L 5 Star Inverter Direct-Cool Single Door Refrigerator (GL-D201APZU, Shiny Steel, Base stand with drawer)</P></a><b style="color:red;margin-left:30%;">(41% off)</b><br><b style="margin-left:30%;">Rs.16,490</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<a href="https://www.amazon.in/Samsung-Semi-Automatic-Loading-WT65R2200LL-TL/dp/B09T6NX8W2/ref=sr_1_8?crid=1GA9ZZZA6P7YE&keywords=washing+machine&nav_sdd=aps&qid=1686390137&refinements=p_36%3A5271572031&rnid=5271547031&s=kitchen&sprefix=washing+&sr=1-8"><img src="ladies3.jpg" width="50%" id="img" style="margin-left:10%;"><br></a>
+			<p style="width:50%;font-size:15px;margin-left:20%;"><a href="">Samsung 6.5 Kg 5 Star Semi Automatic Top Load Washing Machine (WT65R2200LL/TL, Light Gray)</P></a><b style="color:red;margin-left:30%;">(47% off)</b><br><b style="margin-left:30%;">Rs.9,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="ladies4.jpg" width="30%" id="img" style="margin-left:10%;"><br>
+			<p style="width:50%;font-size:15px;margin-left:20%;"><a href="">Panasonic 1.5 Ton 5 Star Wi-Fi Inverter Smart Split AC (Copper Condenser, 7 in 1 Convertible with additional AI Mode, 4 Way Swing, PM 0.1 Air Purification Filter, CS/CU-NU18YKY5W,2023</P></a><b style="color:red;margin-left:30%;">(41% off)</b><br><b style="margin-left:30%;">Rs.44,490</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="ladies5.jpg" width="50%" id="img" style="margin-left:10%;"><br>
+			<p style="width:50%;font-size:15px;margin-left:20%;"><a href="">Samsung 6.0 Kg Inverter 5 Star Fully-Automatic Front Loading Washing Machine (WW60R20GLMA/TL, White, Hygiene Steam)</P></a><b style="color:red;margin-left:30%;">(27% off)</b><br><b style="margin-left:30%;">Rs.23,490</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			</tr>
+			</div>
+			<div>
+			<tr>
+			
+			<td>
+			<img src="ladies6.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:50%;font-size:15px;margin-left:20%;"><a href="">Haier 6 kg Fully-Automatic Top Loading Washing Machine (HWM60-1269DB, Moonlight Grey)
+3.6 out of 5 stars</P></a><b style="color:red;margin-left:30%;">(33% off)</b><br><b style="margin-left:30%;">Rs.10,490</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<br>
+			<img src="ladies8.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:50%;font-size:15px;margin-left:20%;"><a href="">Amazon Basics 6.5 Kg Fully Automatic Top Loading Washing Machine, Grey</P></a><b style="color:red;margin-left:30%;">(43% off)</b><br><b style="margin-left:30%;">Rs.12,490</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<img src="ladies9.jpg" width="40%" id="img" style="margin-left:10%;"><br>
+			<p style="width:50%;font-size:15px;margin-left:20%;"><a href="">Panasonic 6.5 Kg 5 Star Fully-Automatic Top Loading Washing Machine (NA-F65LF2MRB, Grey)</P></a><b style="color:red;margin-left:30%;">(40% off)</b><br><b style="margin-left:30%;">Rs.14,190</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="ladies7.jpg" width="40%" id="img" style="margin-left:10%;"><br>
+			<p style="width:50%;font-size:15px;margin-left:20%;"><a href="">Samsung 8 Kg 5 Star AI Control & Wi-Fi, Fully-Automatic Front Loading Washing Machine (WW80T504DAB1TL, Black Caviar, Digital Inverter)</P></a><b style="color:red;margin-left:30%;">(46% off)</b><br><b style="margin-left:30%;">Rs.36,990</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="ladies10.jpg" width="50%" id="img" style="margin-left:10%;"><br>
+			<p style="width:50%;font-size:15px;margin-left:20%;"><a href="">Bosch 6 kg 5 Star Inverter Fully Automatic Front Loading Washing Machine with In - built Heater (WLJ2016WIN, White )</P></a><b style="color:red;margin-left:30%;">(39% off)</b><br><b style="margin-left:30%;">Rs.23,900</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			</tr>
+			</div>
+            </table>
+            </div>
+			</body>
+			</html>

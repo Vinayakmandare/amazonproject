@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation Bar</title>
+        <style>
+		body{
+		width:100%;
+	   
+		}
+		td,tr{
+		border:1px solid black;
+		}
+            html{scroll-behavior: smooth;}
+            *{
+                margin:0;
+                padding:0;
+            }
+            nav{
+                display:flex;
+                justify-content: space-between;
+                background-color: rgb(227,226,222);
+                color:black;
+            }
+            nav ul{
+                width:25%;
+                margin-right: 50px;
+                display:flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style: none;
+            }
+            nav ul li{
+                cursor:pointer;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color:black;
+                padding:5px;
+            }
+            nav ul li a:hover{
+                border-bottom: solid red;
+				border-top:solid red;
+            
+            }
+            nav img{
+              height:50px;
+              margin-left: 10px;
+            }
+            .sub-container{
+                border:1px solid black;
+                width:100%;
+                height:500vh;
+            }
+            #searchbar{
+                align: center;
+            }
+            #home{
+                
+            }
+			#img:hover{
+			width:80%;
+			
+			}
+			#btn1{
+			background-color:green;
+			border-color:red;
+			width:50%;
+			color:white;
+			}
+			#btn1:hover{
+			background-color:blue;
+			border-color:green;
+			
+			}
+			#btn2{
+			background-color:green;
+			border-color:red;
+			width:30%;
+			color:white;
+			margin-left:50px;
+			}
+           #btn2:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			#btn3{
+			background-color:green;
+			border-color:red;
+			width:25%;
+			color:white;
+			margin-left:100px;
+			}
+           #btn3:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			#btn4{
+			background-color:green;
+			border-color:red;
+			width:25%;
+			color:white;
+			margin-left:70px;
+			}
+           #btn4:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			#btn5{
+			background-color:green;
+			border-color:red;
+			width:25%;
+			color:white;
+			margin-left:70px;
+			}
+           #btn5:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color:bottom-border:solid red;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+ 
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: gray;color:white;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+		  #whatsapp{
+		  margin-left:10%;
+		  }
+
+		  
+        </style>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+			
+        </style>
+    </head>
+    <body>
+        <nav>
+            <img src="download (1).png" alt="Amazon">
+            
+            <input type="search"  placeholder="Search Amazon.in" style="width:  50%;border:5px solid yellow;">
+          
+               
+            <ul>
+                <li><a href="index.html">Home</a></li>
+              <li>  <a onclick="myFunction()" class="dropbtn">Menu</a>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="navigation.html">Electronics</a>
+    <a href="shirts.html" target="_blank">Mens Shirts</a>
+    <a href="shoes.html" >Mens Shoes</a>
+	 <a href="Travels.html" >Travells & School Bag</a>
+	  <a href="category.html">Choose Category</a>
+	
+  </div> </li>
+                 <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeago3fZ7iXsw7vEkkj97am-SQIg7n7U4_oQleX_xzGWgloVw/viewform?usp=sf_link">Contact</a></li> 
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+		
+        <div class="container">
+            <div class="home sub-container" id="home" style="font-size:25px;text-align:center;"><br>Home<br><br><h3>Electronics Accessories</h3>
+               <table>
+               <br><br>
+                <tr>
+                <td>
+				
+                <img src="vivo.jpg" width="50%"  id="img" style="margin-left:20%;" ><br><p style="width:50%;font-size:15px;margin-left:20%;"><a href=""><a href="https://www.gsmarena.com/vivo_y56-12125.php">Vivo Y56 5G (Black Engine, 8GB RAM, 128GB Storage) with No Cost EMI/Additional Exchange Offers</a><br><b style="color:red">20% discount</b><br><b>Rs.19,999</b>
+				<br><br><a href="#contact"><button type="button" id="btn1">Buy Now</button>
+            </td>
+           <td>
+                <img src="oppo.jpg" width="60%" id="img"  style="margin-left:10%;"><br><p style="width:70%;font-size:15px;margin-left:20%;"><a href="">OPPO K3 (Aurora Blue,<br> 8GB RAM, AMOLED Display 128GB Storage, 3765mAH Battery) Refurbished</p></a><br><b style="color:red;margin-left:20%;">20% discount</b><br><b style="margin-left:20%;">Rs.18,999</b>
+               <br><br><a href="#contact"><button type="button" id="btn2">Buy Now</button>           
+		   </td>
+            <td>
+                <img src="oneplus.jpg" width="50%"  id="img"  style="margin-left:30%;" ><br><p style="width:40%;font-size:15px;margin-left:30%;"><a href="" >OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)</p></a><br><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+				  <br><br><a href="#contact"><button type="button" id="btn3">Buy Now</button>
+            </td>
+            <td>
+                <img src="redmi.jpg" width="40%" id="img"  style="margin-left:20%;" ><br><p style="width:50%;font-size:15px; margin-left:20%;"><a href="">
+Redmi Note 12 Pro 5G (Glacier Blue, 8GB RAM, 256GB Storage)</p></a><b style="color:red;margin-left:20%;">20% discount</b><br><b style="margin-left:20%;">Rs.18,999</b>
+  <br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+            </td>
+            <td>
+                <img src="iphone.jpg" width="60%" height="60%" id="img"   style="margin-left:10%;" ><br><p style="width:40%;font-size:15px; margin-left:20%;"><a href="">
+Apple iPhone 14 Pro (256 GB) - Deep Purple</p></a><b style="color:red;margin-left:20%;">8% off</b><br><b style="margin-left:20%;">Rs.1,19,999</b>
+  <br><br><a href="#contact"><button type="button" id="btn5">Buy Now</button>
+            </td>
+            </tr> 
+			</div>
+			
+			
+			<div>
+			<tr>
+			<td>
+			
+			<img src="lapy1.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">HP 15s- Ryzen 5-5500U 8GB RAM/512GB SSD 15.6 inch(39cm) Micro-Edge Anti-Glare FHD Laptop (Natural Silver/AMD Radeon Graphics/Alexa/Dual Speakers/Fast Charge/Windows 11/MS Office), 15s-eq2144au</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<img src="lapy2.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">LENOVO V15- Ryzen 5-5500U 8GB RAM/512GB SSD 15.6 inch(39cm) Micro-Edge Anti-Glare FHD Laptop (Natural Silver/AMD Radeon Graphics/Alexa/Dual Speakers/Fast Charge/Windows 11/MS Office), 15s-eq2144au</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<img src="lappy3.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">HP 14s, 11th Gen Intel Core i3-1115G4, 8GB RAM/256GB SSD 14-inch(35.6 cm) Micro-Edge, Anti-Glare, FHD Laptop/Alexa Built-in/Win 11/Intel UHD Graphics/Dual Speakers/MSO 2021/1.41 Kg, 14s-dy2507TU</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="lappy4.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">ASUS Vivobook 16X (2022), 16-inch (40.64 cms) WUXGA, AMD Ryzen 5 5600H, Thin and Light Laptop (8GB/512GB SSD/Integrated Graphics/Windows 11/Office 2021/Quiet Blue/1.8 kg), M1603QA-MB502WS</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="lappy5.jpg" width="70%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Dell Inspiron 3525 Laptop, AMD Ryzen 3-5425U, 8GB, 512GB, 15.6" (39.62 Cms) FHD WVA AG 120Hz 250 nits, Windows 11 + Office 21, Carbon Black (D560760WIN9B, 1.68Kgs)</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			</tr>
+			</div>
+			<div>
+			<tr>
+			
+			<td>
+			<img src="watch2.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Fire-Boltt Ninja Call Pro Plus 1.83" Smart Watch with Bluetooth Calling, AI Voice Assistance, 100 Sports Modes IP67 Rating, 240 * 280 Pixel High Resolution (Black)</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<br>
+			<img src="watch.jpg" width="50%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Fire-Boltt Gladiator 1.96" Biggest Display Smart Watch with Bluetooth Calling, Voice Assistant &123 Sports Modes, 8 Unique UI Interactions, SpO2, 24/7 Heart Rate Tracking (Black)</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<img src="watch3.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">boAt Newly Launched Ultima Call Max with 2" Big HD Display, Advanced BT Calling, 100+ Sports Modes, 10 Days Battery Life, Multiple Watch Faces, IP68, HR & SpO2, Sedentary Alerts(Active Black)</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="watch4.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Fastrack New Limitless FS1 Smart Watch|Biggest 1.95" Horizon Curve Display|SingleSync BT Calling v5.3|Built-in Alexa|Upto 5 Day Battery|ATS Chipset with Zero Lag|100+ Sports</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="watch5.jpg" width="70%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Noise ColorFit Pulse Grand Smart Watch with 1.69"(4.29cm) HD Display, 60 Sports Modes, 150 Watch Faces, Fast Charge, Spo2, Stress, Sleep, Heart Rate Monitoring & IP68 Waterproof (Jet Black)</P></a><b style="color:red;margin-left:30%;">68% off</b><br><b style="margin-left:30%;">Rs.1,299</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			</tr>
+			</div>
+			
+			
+          
+        </div>
+    </body>
+</html>

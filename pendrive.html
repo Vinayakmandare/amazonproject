@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+ <html>
+ <style>
+ tr,td{
+ border:1px solid black;
+ }
+		html{scroll-behavior: smooth;}
+            *{
+                margin:0;
+                padding:0;
+            }
+            nav{
+                display:flex;
+                justify-content: space-between;
+                background-color: rgb(227,226,222);
+                color:black;
+            }
+            nav ul{
+                width:25%;
+                margin-right: 50px;
+                display:flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style: none;
+            }
+            nav ul li{
+                cursor:pointer;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color:black;
+                padding:5px;
+            }
+            nav ul li a:hover{
+                border-bottom: solid red;
+				border-top:solid red;
+            
+            }
+            nav img{
+              height:50px;
+              margin-left: 10px;
+            }
+            
+            #searchbar{
+                align: center;
+            }
+            #home{
+                
+            }
+			#img:hover{
+			width:80%;
+			
+			}
+			#btn1{
+			background-color:green;
+			border-color:red;
+			width:50%;
+			color:white;
+			}
+			#btn1:hover{
+			background-color:blue;
+			border-color:green;
+			
+			}
+			#btn2{
+			background-color:green;
+			border-color:red;
+			width:30%;
+			color:white;
+			margin-left:50px;
+			}
+           #btn2:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			#btn3{
+			background-color:green;
+			border-color:red;
+			width:25%;
+			color:white;
+			margin-left:100px;
+			}
+           #btn3:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			#btn4{
+			background-color:green;
+			border-color:red;
+			width:25%;
+			color:white;
+			margin-left:70px;
+			}
+           #btn4:hover{
+			background-color:blue;
+			border-color:green;
+			
+			}
+			#btn5{
+			background-color:green;
+			border-color:red;
+			width:25%;
+			color:white;
+			margin-left:70px;
+			}
+           #btn5:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			
+			/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color:bottom-border:solid red;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+ 
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: gray;color:white;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+		  #whatsapp{
+		  margin-left:10%;
+		  }
+
+		  
+        </style>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+			
+        </style>
+    </head>
+    <body>
+	
+        <nav>
+            <img src="download (1).png" alt="Amazon">
+            
+            <input type="search"  placeholder="Search Amazon.in" style="width: 50%;border:5px solid yellow;">
+          
+               
+            <ul>
+                <li><a href="home.html">Home</a></li>
+              <li>  <a onclick="myFunction()" class="dropbtn">Menu</a>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="electronic.html">Electronics</a>
+    <a href="shirts.html" target="_blank">Mens Shirts</a>
+    <a href="shoes.html" >Mens Shoes</a>
+	 <a href="Travels.html" >Travells & School Bag</a>
+	 <a href="category.html">Choose Category</a>
+	
+  </div> </li>
+                 <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeago3fZ7iXsw7vEkkj97am-SQIg7n7U4_oQleX_xzGWgloVw/viewform?usp=sf_link">Contact</a></li> 
+                <li><a href="about.html">About</a></li>
+                
+            </ul>
+        </nav>
+		 <div class="container">
+            <div class="home sub-container" id="home" style="font-size:25px;text-align:center;"><br><h3>Pendrive</h3>
+
+		<table>
+			<tr>
+			<td>
+			<img src="pendrive1.jpg" width="70%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/s?k=pendrive&crid=1JMQZZL39PHUX&sprefix=pendrive%2Caps%2C416&ref=nb_sb_noss_1">SanDisk Ultra Dual Drive Go USB Type C Pendrive for Mobile, Navy Blue, 256GB, 5Y Warranty<div style="margin-right:30%;"></P></a><b style="color:red;"><br>64%off</b><br><b>Rs.1,796</b>
+			<br><a href="#contact"><button type="button" id="btn4">Buy Now</button></div>
+			</td>
+			<td>
+			<br>
+			<img src="pendrive2.jpg" width="70%" id="img" style="margin-left:10%;"><br>
+			<p style="width:50%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/s?k=pendrive&crid=1JMQZZL39PHUX&sprefix=pendrive%2Caps%2C416&ref=nb_sb_noss_1">SanDisk Ultra Dual Drive Luxe USB Type C Flash Drive (Silver, 128 GB, 5Y - SDDDC4-128G-I35)</P></a><br><b style="color:red;margin-left:30%;">62% off</b><br><b style="margin-left:30%;">Rs.1,219</b>
+			<br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<img src="pendrive3.jpg" width="50%" id="img" style="margin-left:10%;"><br>
+			<p style="width:60%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/s?k=pendrive&crid=1JMQZZL39PHUX&sprefix=pendrive%2Caps%2C416&ref=nb_sb_noss_1">SanDisk Cruzer Blade 64GB USB 2.0 Flash Drive</P></a><br><b style="color:red;margin-left:30%;">66% off</b><br><b style="margin-left:30%;">Rs.369</b>
+			<br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="pendrive4.jpg" width="80%" id="img" style="margin-left:10%;"><br>
+			<p style="width:30%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/s?k=pendrive&crid=1JMQZZL39PHUX&sprefix=pendrive%2Caps%2C416&ref=nb_sb_noss_1">SanDisk Ultra Flair 64GB USB 3.0 Pen Drive, Multicolor</P></a><br><b style="color:red;margin-left:30%;">65% off</b><br><b style="margin-left:30%;">Rs.479</b>
+			<br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="pendrive5.jpg" width="40%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/s?k=pendrive&crid=1JMQZZL39PHUX&sprefix=pendrive%2Caps%2C416&ref=nb_sb_noss_1">SanDisk Ultra 128 GB USB 3.0 Pen Drive (Black)</P></a><br><b style="color:red;margin-left:30%;">57% off</b><br><b style="margin-left:30%;">Rs.819</b>
+			<br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			</tr>
+			</div>
+			<div>
+			<tr>
+			
+			<td>
+			<img src="pendrive6.jpg" width="80%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/s?k=pendrive&crid=1JMQZZL39PHUX&sprefix=pendrive%2Caps%2C416&ref=nb_sb_noss_1">HP v236w USB 2.0 64GB Pen Drive, Metal, Silver</P></a><br><b style="color:red;margin-left:30%;">60% off</b><br><b style="margin-left:30%;">Rs.449</b>
+			<br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<br>
+			<img src="pendrive7.jpg" width="70%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/s?k=pendrive&crid=1JMQZZL39PHUX&sprefix=pendrive%2Caps%2C416&ref=nb_sb_noss_1">SanDisk Ultra 128 GB USB Pen Drive (SDDDC2-128G-G46, Black, Silver)</P></a><br><b style="color:red;margin-left:30%;">61% off</b><br><b style="margin-left:30%;">Rs.1,079</b>
+			<br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<img src="pendrive8.jpg" width="25%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/s?k=pendrive&crid=1JMQZZL39PHUX&sprefix=pendrive%2Caps%2C416&ref=nb_sb_noss_1">H/P v220w 128 GB Pen Drive (Grey, Black)</P></a><br><b style="color:red;margin-left:30%;">62% off</b><br><b style="margin-left:30%;">Rs.599</b>
+			<br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="pendrive9.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/s?k=pendrive&crid=1JMQZZL39PHUX&sprefix=pendrive%2Caps%2C416&ref=nb_sb_noss_1">SanDisk Ultra Dual 64 GB USB 3.0 OTG Pen Drive (Black) </P></a><br><b style="color:red;margin-left:30%;">66% off</b><br><b style="margin-left:30%;">Rs.429</b>
+			<br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="pendrive10.jpg" width="70%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="https://www.amazon.in/s?k=pendrive&crid=1JMQZZL39PHUX&sprefix=pendrive%2Caps%2C416&ref=nb_sb_noss_1">HP v222w 64GB USB 2.0 Pen Drive (Silver)</P></a><br><b style="color:red;margin-left:30%;">68% off</b><br><b style="margin-left:30%;">Rs.459</b>
+			<br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			
+			</tr>
+			</div>
+            </table>
+			</div>
+			</body>
+			</html>

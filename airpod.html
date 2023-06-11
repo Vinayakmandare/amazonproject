@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+ <html>
+ <style>
+ tr,td{
+ border:1px solid black;
+ }
+		html{scroll-behavior: smooth;}
+            *{
+                margin:0;
+                padding:0;
+            }
+            nav{
+                display:flex;
+                justify-content: space-between;
+                background-color: rgb(227,226,222);
+                color:black;
+            }
+            nav ul{
+                width:25%;
+                margin-right: 50px;
+                display:flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style: none;
+            }
+            nav ul li{
+                cursor:pointer;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color:black;
+                padding:5px;
+            }
+            nav ul li a:hover{
+                border-bottom: solid red;
+				border-top:solid red;
+            
+            }
+            nav img{
+              height:50px;
+              margin-left: 10px;
+            }
+            
+            #searchbar{
+                align: center;
+            }
+            #home{
+                
+            }
+			#img:hover{
+			width:80%;
+			
+			}
+			#btn1{
+			background-color:green;
+			border-color:red;
+			width:50%;
+			color:white;
+			}
+			#btn1:hover{
+			background-color:blue;
+			border-color:green;
+			
+			}
+			#btn2{
+			background-color:green;
+			border-color:red;
+			width:30%;
+			color:white;
+			margin-left:50px;
+			}
+           #btn2:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			#btn3{
+			background-color:green;
+			border-color:red;
+			width:25%;
+			color:white;
+			margin-left:100px;
+			}
+           #btn3:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			#btn4{
+			background-color:green;
+			border-color:red;
+			width:25%;
+			color:white;
+			margin-left:70px;
+			}
+           #btn4:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			#btn5{
+			background-color:green;
+			border-color:red;
+			width:25%;
+			color:white;
+			margin-left:70px;
+			}
+           #btn5:hover{
+			background-color:blue;
+			border-color:green;
+			}
+			
+			/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color:bottom-border:solid red;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+ 
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: gray;color:white;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+		  #whatsapp{
+		  margin-left:10%;
+		  }
+
+		  
+        </style>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+			
+        </style>
+    </head>
+    <body>
+	
+        <nav>
+            <img src="download (1).png" alt="Amazon">
+            
+            <input type="search"  placeholder="Search Amazon.in" style="width: 50%;border:5px solid yellow;">
+          
+               
+            <ul>
+                <li><a href="home.html">Home</a></li>
+              <li>  <a onclick="myFunction()" class="dropbtn">Menu</a>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="electronic.html">Electronics</a>
+    <a href="shirts.html" target="_blank">Mens Shirts</a>
+    <a href="shoes.html" >Mens Shoes</a>
+	 <a href="Travels.html" >Travells & School Bag</a>
+	 <a href="category.html">Choose Category</a>
+	
+  </div> </li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeago3fZ7iXsw7vEkkj97am-SQIg7n7U4_oQleX_xzGWgloVw/viewform?usp=sf_link">Contact</a></li> 
+                <li><a href="about.html">About</a></li>
+                
+            </ul>
+        </nav>
+		 <div class="container">
+            <div class="home sub-container" id="home" style="font-size:25px;text-align:center;"><br><h3>Airpods</h3>
+
+		<table>
+			<tr>
+			<td>
+			<img src="airpod1.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:50%;font-size:15px;margin-left:20%;"><a href="">Fire-Boltt Ninja Call Pro Plus 1.83" Smart Watch with Bluetooth Calling, AI Voice Assistance, 100 Sports Modes IP67 Rating, 240 * 280 Pixel High Resolution (Black)</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<br>
+			<img src="airpod2.jpg" width="50%" id="img" style="margin-left:10%;"><br>
+			<p style="width:50%;font-size:15px;margin-left:20%;"><a href="">Fire-Boltt Gladiator 1.96" Biggest Display Smart Watch with Bluetooth Calling, Voice Assistant &123 Sports Modes, 8 Unique UI Interactions, SpO2, 24/7 Heart Rate Tracking (Black)</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<img src="airpod3.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">boAt Newly Launched Ultima Call Max with 2" Big HD Display, Advanced BT Calling, 100+ Sports Modes, 10 Days Battery Life, Multiple Watch Faces, IP68, HR & SpO2, Sedentary Alerts(Active Black)</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="airpod4.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Fastrack New Limitless FS1 Smart Watch|Biggest 1.95" Horizon Curve Display|SingleSync BT Calling v5.3|Built-in Alexa|Upto 5 Day Battery|ATS Chipset with Zero Lag|100+ Sports</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="airpod5.jpg" width="70%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Noise ColorFit Pulse Grand Smart Watch with 1.69"(4.29cm) HD Display, 60 Sports Modes, 150 Watch Faces, Fast Charge, Spo2, Stress, Sleep, Heart Rate Monitoring & IP68 Waterproof (Jet Black)</P></a><b style="color:red;margin-left:30%;">68% off</b><br><b style="margin-left:30%;">Rs.1,299</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			</tr>
+			</div>
+			<div>
+			<tr>
+			
+			<td>
+			<img src="airpod6.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Fire-Boltt Ninja Call Pro Plus 1.83" Smart Watch with Bluetooth Calling, AI Voice Assistance, 100 Sports Modes IP67 Rating, 240 * 280 Pixel High Resolution (Black)</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<br>
+			<img src="airpod7.jpg" width="50%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Fire-Boltt Gladiator 1.96" Biggest Display Smart Watch with Bluetooth Calling, Voice Assistant &123 Sports Modes, 8 Unique UI Interactions, SpO2, 24/7 Heart Rate Tracking (Black)</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td>
+			<img src="airpod8.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">boAt Newly Launched Ultima Call Max with 2" Big HD Display, Advanced BT Calling, 100+ Sports Modes, 10 Days Battery Life, Multiple Watch Faces, IP68, HR & SpO2, Sedentary Alerts(Active Black)</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="airpod9.jpg" width="60%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Fastrack New Limitless FS1 Smart Watch|Biggest 1.95" Horizon Curve Display|SingleSync BT Calling v5.3|Built-in Alexa|Upto 5 Day Battery|ATS Chipset with Zero Lag|100+ Sports</P></a><b style="color:red;margin-left:30%;">18% discount</b><br><b style="margin-left:30%;">Rs.19,999</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			<td><img src="airpod10.jpg" width="70%" id="img" style="margin-left:10%;"><br>
+			<p style="width:40%;font-size:15px;margin-left:20%;"><a href="">Noise ColorFit Pulse Grand Smart Watch with 1.69"(4.29cm) HD Display, 60 Sports Modes, 150 Watch Faces, Fast Charge, Spo2, Stress, Sleep, Heart Rate Monitoring & IP68 Waterproof (Jet Black)</P></a><b style="color:red;margin-left:30%;">68% off</b><br><b style="margin-left:30%;">Rs.1,299</b>
+			<br><br><a href="#contact"><button type="button" id="btn4">Buy Now</button>
+			</td>
+			
+			</tr>
+			</div>
+            </table>
+			</div>
+			</body>
+			</html>
